@@ -42,7 +42,7 @@ DEFS	= -D_GNU_SOURCE
 CFLAGS	= $(DEBUG) $(DEFS) -Wformat=2 -Wall -Wextra -Winline $(INCLUDE) -pipe -fPIC $(EXTRA_CFLAGS)
 #CFLAGS	= $(DEBUG) $(DEFS) -Wformat=2 -Wall -Wextra -Wconversion -Winline $(INCLUDE) -pipe -fPIC
 
-LIBS    = -lm -lpthread -lrt -lcrypt
+LIBS    = -lm -lpthread -lrt
 
 ###############################################################################
 
@@ -59,9 +59,8 @@ SRC	=	wiringPi.c						\
 		max31855.c max5322.c ads1115.c				\
 		sn3218.c						\
 		bmp180.c htu21d.c ds18b20.c rht03.c			\
-		drcSerial.c drcNet.c					\
+		drcSerial.c					\
 		pseudoPins.c						\
-		wpiExtensions.c						\
 		wiringPiLegacy.c
 
 HEADERS =	$(shell ls *.h)
