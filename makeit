@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ -z "$OUTPUT_PATH" ]; then
+  OUTPUT_PATH="out"
+fi
+
+mkdir -p "$OUTPUT_PATH"
+REALLY_OUTPUT_PATH="$(realpath "$OUTPUT_PATH")"
+
+pushd wiringPi || exit
+make CC=aarch64-linux-gnu-gcc LD=aarch64-linux-gnu-ld clean all
+for name in *.h; do
+  TO="$REALLY_OUTPUT_PATH/$(basename "$name")"
+  printf "[out] %s -> %s\n" "$(basename "$name")" "$TO"
+  cp "$(realpath "$name")" "$TO"
+done
+for name in lib*.so*; do
+  TO="$REALLY_OUTPUT_PATH/$(basename "$name")"
+  printf "[out] %s -> %s\n" "$(basename "$name")" "$TO"
+  cp "$(realpath "$name")" "$TO"
+done
+popd
