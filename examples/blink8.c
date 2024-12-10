@@ -24,7 +24,7 @@
  */
 
 #include <stdio.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 int main (void)
 {

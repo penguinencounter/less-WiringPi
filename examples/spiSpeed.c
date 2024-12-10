@@ -33,8 +33,8 @@
 //#include <sys/ioctl.h>
 //#include <linux/spi/spidev.h>
 
-#include <wiringPi.h>
-#include <wiringPiSPI.h>
+#include "wiringPi.h"
+#include "wiringPiSPI.h"
 
 #define	TRUE	(1==1)
 #define	FALSE	(!TRUE)

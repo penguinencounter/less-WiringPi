@@ -31,8 +31,8 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 
-#include <wiringPi.h>
-#include <wiringPiI2C.h>
+#include "wiringPi.h"
+#include "wiringPiI2C.h"
 
 #include "mcp3422.h"
 

@@ -26,7 +26,7 @@
 
 #include <stdio.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piFace.h>
 
 int outputs [4] = { 0,0,0,0 } ;

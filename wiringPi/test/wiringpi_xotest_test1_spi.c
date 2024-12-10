@@ -6,7 +6,7 @@
 #include <signal.h>
 #include <time.h>
 #include "wpi_test.h"
-#include <wiringPiSPI.h>
+#include "wiringPiSPI.h"
 
 #define TRUE                (1==1)
 #define FALSE               (!TRUE)

@@ -1,5 +1,5 @@
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include "wiringPiLegacy.h"
 #include <stdio.h>
 #include <stdlib.h>

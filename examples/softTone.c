@@ -27,7 +27,7 @@
 #include <errno.h>
 #include <string.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <softTone.h>
 
 #define	PIN	3

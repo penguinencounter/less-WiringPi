@@ -42,7 +42,7 @@
 #include <time.h>
 #include <math.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <lcd128x64.h>
 
 #ifndef	TRUE

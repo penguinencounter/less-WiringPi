@@ -28,7 +28,7 @@
 
 #include <stdio.h>
 #include <time.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 
 #define	LOW_POWER	35

@@ -44,7 +44,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <lcd.h>
 
 #ifndef	TRUE

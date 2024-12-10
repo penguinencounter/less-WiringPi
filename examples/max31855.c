@@ -28,7 +28,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <max31855.h>
 
 int main (int argc, char *argv [])

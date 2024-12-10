@@ -30,7 +30,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <mcp23017.h>
 #include <lcd.h>
 

@@ -24,7 +24,7 @@
  */
 
 #include <stdio.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 // Simple sequencer data
 //	Triplets of LED, On/Off and delay

@@ -24,7 +24,7 @@
 
 #include <stdio.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piFace.h>
 
 // Use 200 as the pin-base for the PiFace board, and pick a pin

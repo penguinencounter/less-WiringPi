@@ -34,7 +34,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 // A 'key' which we can lock and unlock - values are 0 through 3
 //	This is interpreted internally as a pthread_mutex by wiringPi

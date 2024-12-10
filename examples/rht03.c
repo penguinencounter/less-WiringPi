@@ -24,7 +24,7 @@
 
 #include <stdio.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <maxdetect.h>
 
 #define	RHT03_PIN	7

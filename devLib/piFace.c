@@ -28,7 +28,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <mcp23s17.h>
 
 #include "piFace.h"

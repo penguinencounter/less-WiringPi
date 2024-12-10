@@ -23,7 +23,7 @@
  */
 
 #include <stdio.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <mcp23017.h>
 
 #define	LED		1

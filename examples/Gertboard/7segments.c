@@ -9,7 +9,7 @@
 
 #undef	PHOTO_HACK
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 #include <stdio.h>
 #include <time.h>

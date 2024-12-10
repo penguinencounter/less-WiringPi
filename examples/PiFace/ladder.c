@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <math.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piFace.h>
 
 #ifndef	TRUE

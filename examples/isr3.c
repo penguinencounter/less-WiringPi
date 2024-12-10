@@ -9,7 +9,7 @@
 #include <string.h>
 #include <errno.h>
 #include <stdlib.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <wpiExtensions.h>
 #include <unistd.h>
  #include <sys/time.h>

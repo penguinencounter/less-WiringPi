@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <poll.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piGlow.h>
 
 #define	PIGLOW_BASE	533

@@ -28,7 +28,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <wiringPiI2C.h>
+#include "wiringPiI2C.h"
 
 #include "scrollPhatFont.h"
 #include "scrollPhat.h"

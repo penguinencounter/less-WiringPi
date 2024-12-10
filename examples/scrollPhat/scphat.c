@@ -28,7 +28,7 @@
 #include <errno.h>
 #include <string.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <scrollPhat.h>
 
 static char *progName ;

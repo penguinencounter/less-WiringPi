@@ -31,7 +31,7 @@
 #include <signal.h>
 #include <errno.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <wpiExtensions.h>
 
 #include "drcNetCmd.h"

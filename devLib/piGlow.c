@@ -22,7 +22,7 @@
  ***********************************************************************
  */
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <sn3218.h>
 
 #include "piGlow.h"

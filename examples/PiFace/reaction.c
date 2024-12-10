@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piFace.h>
 
 

@@ -32,7 +32,7 @@
 #  define FALSE (!TRUE)
 #endif
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piGlow.h>
 
 static void failUsage (void)

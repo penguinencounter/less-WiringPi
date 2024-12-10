@@ -28,7 +28,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <ds1302.h>
 
 // Register defines

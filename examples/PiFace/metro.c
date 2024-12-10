@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piFace.h>
 
 #define	PIFACE	200

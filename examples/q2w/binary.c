@@ -24,7 +24,7 @@
  */
 
 #include <stdio.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <mcp23017.h>
 
 #define	Q2W_BASE	100

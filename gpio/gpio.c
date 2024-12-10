@@ -34,7 +34,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <wpiExtensions.h>
 
 #include <gertboard.h>

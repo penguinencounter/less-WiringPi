@@ -6,7 +6,7 @@
 #include <signal.h>
 #include <time.h>
 #include "wpi_test.h"
-#include <wiringPiSPI.h>
+#include "wiringPiSPI.h"
 
 const float fRefVoltage = 3.3f;
 const float fResolution = 4096; //12-Bit

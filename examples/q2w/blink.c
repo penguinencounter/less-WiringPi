@@ -23,7 +23,7 @@
  */
 
 #include <stdio.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 #define	LED	1
 

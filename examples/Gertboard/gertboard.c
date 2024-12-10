@@ -38,7 +38,7 @@
 
 #define	B_SIZE	256
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <gertboard.h>
 
 int main (void)

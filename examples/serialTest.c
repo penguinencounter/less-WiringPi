@@ -27,7 +27,7 @@
 #include <string.h>
 #include <errno.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <wiringSerial.h>
 
 int main ()

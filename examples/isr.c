@@ -35,7 +35,7 @@
 #include <string.h>
 #include <errno.h>
 #include <stdlib.h>
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 
 // globalCounter:

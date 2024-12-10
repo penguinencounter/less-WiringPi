@@ -25,7 +25,7 @@
  ***********************************************************************
  */
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <sn3218.h>
 
 #define	LED_BASE	533

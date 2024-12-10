@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <sys/time.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <gertboard.h>
 
 #define	B_SIZE	40000

@@ -33,7 +33,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 
 extern int wpMode ;
 

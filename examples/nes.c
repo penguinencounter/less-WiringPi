@@ -26,7 +26,7 @@
 #include <errno.h>
 #include <string.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <piNes.h>
 
 #define	BLANK	"|      "

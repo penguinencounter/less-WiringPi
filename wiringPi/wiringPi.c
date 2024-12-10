@@ -154,8 +154,11 @@ const unsigned int RP1_PUD_DOWN = (1<<2);
 const unsigned int RP1_INV_PUD_MASK = ~(RP1_PUD_UP | RP1_PUD_DOWN); //~0x0C
 
 //RP1 chip (@Pi5) pin level, status register
-const unsigned int RP1_STATUS_LEVEL_LOW  = 0x00400000;
-const unsigned int RP1_STATUS_LEVEL_HIGH = 0x00800000;
+// for some reason ninja was complaining about these not being constexpr
+#define RP1_STATUS_LEVEL_LOW 0x00400000
+// const unsigned int RP1_STATUS_LEVEL_LOW  = 0x00400000;
+#define RP1_STATUS_LEVEL_HIGH 0x00800000
+// const unsigned int RP1_STATUS_LEVEL_HIGH = 0x00800000;
 const unsigned int RP1_STATUS_LEVEL_MASK = 0x00C00000;
 
 const unsigned int RP1_DEBOUNCE_DEFAULT_VALUE = 4;

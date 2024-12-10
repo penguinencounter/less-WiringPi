@@ -36,7 +36,7 @@
 #include <unistd.h>
 #include <math.h>
 
-#include <wiringPi.h>
+#include "wiringPi.h"
 #include <softPwm.h>
 
 // The OK/Act LED is connected to BCM_GPIO pin 16
