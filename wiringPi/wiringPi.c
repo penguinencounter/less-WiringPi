@@ -437,7 +437,8 @@ static int RaspberryPiLayout = -1;
 // Debugging & Return codes
 
 int wiringPiDebug       = FALSE ;
-int wiringPiReturnCodes = FALSE ;
+// Modified: always use return codes to indicate failure, instead of 'exit()' (why is that the default??)
+int wiringPiReturnCodes = TRUE  ;
 
 // Use /dev/gpiomem ?
 
