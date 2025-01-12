@@ -470,7 +470,8 @@ static int isrFds [64] =
 
 // ISR Data
 static int chipFd = -1;
-static void (*isrFunctions [64])(void) ;
+static void (*isrFunctions [64])(void*) ;
+static void* isrUserdata[64];
 static pthread_t isrThreads[64];
 static int isrMode[64];
 
@@ -2691,8 +2692,9 @@ int waitForInterruptClose (int pin) {
     }
     close(isrFds [pin]);
   }
-  isrFds [pin] = -1;
-  isrFunctions [pin] = NULL;
+  isrFds[pin] = -1;
+  isrFunctions[pin] = NULL;
+  isrUserdata[pin] = NULL;
 
   /* -not closing so far - other isr may be using it - only close if no other is using - will code later
   if (chipFd>0) {
@@ -2734,8 +2736,8 @@ static void *interruptHandler (UNU void *arg)
       if (wiringPiDebug) {
         printf ("wiringPi: call function\n") ;
       }
-      if(isrFunctions [pin]) {
-        isrFunctions [pin] () ;
+      if(isrFunctions[pin]) {
+        isrFunctions[pin](isrUserdata[pin]) ;
       }
       // wait again - in the past forever - now can be stopped by  waitForInterruptClose
     } else if( ret< 0) {
@@ -2759,7 +2761,7 @@ static void *interruptHandler (UNU void *arg)
  *********************************************************************************
  */
 
-int wiringPiISR (int pin, int mode, void (*function)(void))
+int wiringPiISR (int pin, int mode, void (*function)(void*), void* userdata)
 {
   const int maxpin = GetMaxPin();
 
@@ -2770,11 +2772,12 @@ int wiringPiISR (int pin, int mode, void (*function)(void))
   if (wiringPiDebug) {
     printf ("wiringPi: wiringPiISR pin %d, mode %d\n", pin, mode) ;
   }
-  if (isrFunctions [pin]) {
+  if (isrFunctions[pin]) {
     printf ("wiringPi: ISR function alread active, ignoring \n") ;
   }
 
-  isrFunctions [pin] = function ;
+  isrFunctions[pin] = function;
+  isrUserdata[pin] = userdata;
   isrMode[pin] = mode;
   if(waitForInterruptInit (pin, mode)<0) {
     if (wiringPiDebug) {
